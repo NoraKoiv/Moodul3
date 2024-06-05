@@ -51,7 +51,7 @@ table {
 
 /* Headings */
 .h1 {
-	font-size: 96px;
+	font-size: 80px;
 	font-family: 'Bebas Neue';
 }
 
@@ -61,23 +61,23 @@ h2 {
 }
 
 h3 {
-	font-size: 48px;
-	font-family: 'Bebas Neue';
-}
-
-h4 {
 	font-size: 40px;
 	font-family: 'Bebas Neue';
 }
 
-h5 {
+h4 {
 	font-size: 32px;
+	font-family: 'Bebas Neue';
+}
+
+h5 {
+	font-size: 20px;
 	font-family: 'Bebas Neue';
 }
 
 
 h6 {
-	font-size: 16px;
+	font-size: 12px;
 	font-family: 'Bebas Neue';
 }
 /* Headings end*/
@@ -104,35 +104,15 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between; /* Adjusted to spread items */
     padding: 10px 20px;
-    margin-top: 51px; 
-}
-
-.logo {
-    flex: 1;
-    margin: 25px 12px; 
+    margin-top: 51px;
 }
 
 .logo img {
     height: 100px;
     width: 185px;
-}
-
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    margin-top: 51px; 
-}
-
-.logo {
-    margin: 25px 12px; 
-}
-
-.logo img {
-    height: 100px;
-    width: 185px;
+    margin: 25px 12px; /* Adjusted margin for the logo */
 }
 
 .nav-links {
@@ -140,29 +120,25 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    flex-grow: 1; 
-    justify-content: space-between; 
-    margin-left: calc(323px - 185px - 12px); /* Distance from the logo */
-    margin-right: 528px; /* Distance from the right edge */
 }
 
 .nav-links li {
-    margin: 0 20px; 
+    margin: 0 20px;
 }
 
 .nav-links a {
     font-family: 'Bebas Neue';
-    font-size: 53px;
+    font-size: 40px;
     color: #FFD700;
     text-decoration: none;
 }
 
 .nav-links a:hover {
-    color: #FFA500; 
+    color: #FFA500;
 }
 
 .nav-links .current {
-    color: white; 
+    color: white;
 }
 
 .slogan {
@@ -185,7 +161,7 @@ body {
 
 .caption {
     text-align: center; 
-    font-size: 128px; 
+    font-size: 80px; 
     font-family:'Bebas Neue';
     color: #FFF;
     margin-top: 45px; 
@@ -210,35 +186,72 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    text-align: center; /* Center the captions */
+    text-align: center; 
 }
 
 
 .team-member {
     text-align: center;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 .team-member img {
-    width: 580px;
-    height: 580px;
+    width: 400px;
+    height: 400px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .bigger img {
-    width: 600px; /* Adjust the width of the bigger images */
-    height: 600px; /* Maintain aspect ratio */
+    width: 500px; 
+    height: 500px; 
 }
 
-/* Center the captions for player names */
+
 .player-name {
-    width: 237px; /* Width of the text box for player names */
+    width: 237px; 
 }
 
 .team-member h3, .team-member h4 {
-    margin: 0 auto; /* Center the captions */
+    margin: 0 auto; 
 
     color: #FFF;
-    display: block; /* Ensure each caption is displayed as a block element */
+    display: block; 
+}
+
+/* Games */
+.games-section {
+    background-color: #1D1D1D;
+    padding: 20px;
+    text-align: center;
+}
+
+.caption2 {
+    text-align: center;
+    color: #FFA500;
+    font-size: 80px;
+	font-family: 'Bebas Neue'; 
+    margin-top: 50px;
+}
+
+.games-container {
+    display: flex;
+    justify-content: center;
+}
+
+.game {
+    margin: 0 5px; /* Adjust spacing between games */
+}
+
+.game img {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 389x;
+}
+
+.game-name {
+    color: #FFF;
+    margin-top: 10px; /* Adjust spacing between image and text */
+    text-align: center; /* Center the caption */
 }
