@@ -104,15 +104,15 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Adjusted to spread items */
+    justify-content: space-between; 
     padding: 10px 20px;
-    margin-top: 51px;
+    margin-top: 45px;
 }
 
 .logo img {
     height: 100px;
     width: 185px;
-    margin: 25px 12px; /* Adjusted margin for the logo */
+    margin: 25px 12px; 
 }
 
 .nav-links {
@@ -147,7 +147,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 604px; 
-    text-align: center; /
+    text-align: center; 
 }
 
 .slogan p {
@@ -240,7 +240,7 @@ body {
 }
 
 .game {
-    margin: 0 5px; /* Adjust spacing between games */
+    margin: 0 5px; 
 }
 
 .game img {
@@ -252,6 +252,55 @@ body {
 
 .game-name {
     color: #FFF;
-    margin-top: 10px; /* Adjust spacing between image and text */
-    text-align: center; /* Center the caption */
+    margin-top: 10px; 
+    text-align: center; 
 }
+
+/* results */
+.results {
+    background-color: #1D1D1D;
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #FFF;
+    font-size: 80px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-size: 80px;
+	font-family: 'Bebas Neue';
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #FFF; /* Adjust border color */
+    padding: 10px;
+    text-align: center;
+}
+
+/*width of the first and third columns */
+th:first-child,
+td:first-child,
+th:nth-child(3),
+td:nth-child(3) {
+    width: 30%; 
+}
+
+/* width of the second and fourth columns */
+th:nth-child(2),
+td:nth-child(2),
+th:nth-child(4),
+td:nth-child(4) {
+    width: 10%; 
+}
+
+.results h4, p {
+    margin: 10px;
+    color: #FFF;
+}
+
