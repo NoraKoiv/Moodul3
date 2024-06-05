@@ -51,33 +51,33 @@ table {
 
 /* Headings */
 .h1 {
-	font-size: 128px;
+	font-size: 96px;
 	font-family: 'Bebas Neue';
 }
 
 h2 {
-	font-size: 85px;
-	font-family: 'Bebas Neue';
-}
-
-h3 {
 	font-size: 64px;
 	font-family: 'Bebas Neue';
 }
 
+h3 {
+	font-size: 48px;
+	font-family: 'Bebas Neue';
+}
+
 h4 {
-	font-size: 53px;
+	font-size: 40px;
 	font-family: 'Bebas Neue';
 }
 
 h5 {
-	font-size: 42px;
+	font-size: 32px;
 	font-family: 'Bebas Neue';
 }
 
 
 h6 {
-	font-size: 21px;
+	font-size: 16px;
 	font-family: 'Bebas Neue';
 }
 /* Headings end*/
@@ -89,6 +89,8 @@ p {
 body {
     margin: 0;
 }
+
+/* Hero, nav */
 
 .hero-section {
     background-image: url('/img/herotext1.png');
@@ -179,6 +181,7 @@ body {
 }
 
 
+/* Team */
 
 .caption {
     text-align: center; 
@@ -190,30 +193,52 @@ body {
 
 .team-section {
     background-color: #1D1D1D;
-    width: 100%; /* Full width of the page */
-    padding: 20px 0; /* Add some padding for spacing */
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caption {
+    text-align: center;
+    color: #FFF;
+    margin-bottom: 50px;
 }
 
 .row {
     display: flex;
-    justify-content: center; /* Center the items horizontally */
-    margin-bottom: 20px; /* Add margin between rows */
+    justify-content: center;
+    margin-bottom: 20px;
+    text-align: center; /* Center the captions */
 }
+
 
 .team-member {
-    width: 150px; /* Adjust the width of the team member photos */
-    height: 150px; /* Adjust the height of the team member photos */
-    background-color: #FFF; /* Add a background color for the photos */
-    margin: 0 10px; /* Add margin between team members */
+    text-align: center;
+    margin: 0; /* Remove default margin */
 }
 
-.bigger {
-    width: 200px; /* Larger width for the bigger team members */
-    height: 200px; /* Larger height for the bigger team members */
+.team-member img {
+    width: 580px;
+    height: 580px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.bigger img {
+    width: 600px; /* Adjust the width of the bigger images */
+    height: 600px; /* Maintain aspect ratio */
+}
+
+/* Center the captions for player names */
+.player-name {
+    width: 237px; /* Width of the text box for player names */
 }
 
 .team-member h3, .team-member h4 {
-    text-align: center; /* Center the captions */
-    margin-top: 10px; /* Add some space between the team members and their captions */
-}
+    margin: 0 auto; /* Center the captions */
 
+    color: #FFF;
+    display: block; /* Ensure each caption is displayed as a block element */
+}
