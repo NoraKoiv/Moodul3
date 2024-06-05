@@ -1,0 +1,219 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+
+/* End reset */
+
+/* Headings */
+.h1 {
+	font-size: 128px;
+	font-family: 'Bebas Neue';
+}
+
+h2 {
+	font-size: 85px;
+	font-family: 'Bebas Neue';
+}
+
+h3 {
+	font-size: 64px;
+	font-family: 'Bebas Neue';
+}
+
+h4 {
+	font-size: 53px;
+	font-family: 'Bebas Neue';
+}
+
+h5 {
+	font-size: 42px;
+	font-family: 'Bebas Neue';
+}
+
+
+h6 {
+	font-size: 21px;
+	font-family: 'Bebas Neue';
+}
+/* Headings end*/
+
+p {
+	font-family: 'Montserrat';
+}
+
+body {
+    margin: 0;
+}
+
+.hero-section {
+    background-image: url('/img/herotext1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-top: 51px; 
+}
+
+.logo {
+    flex: 1;
+    margin: 25px 12px; 
+}
+
+.logo img {
+    height: 100px;
+    width: 185px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 51px; 
+}
+
+.logo {
+    margin: 25px 12px; 
+}
+
+.logo img {
+    height: 100px;
+    width: 185px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1; 
+    justify-content: space-between; 
+    margin-left: calc(323px - 185px - 12px); /* Distance from the logo */
+    margin-right: 528px; /* Distance from the right edge */
+}
+
+.nav-links li {
+    margin: 0 20px; 
+}
+
+.nav-links a {
+    font-family: 'Bebas Neue';
+    font-size: 53px;
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #FFA500; 
+}
+
+.nav-links .current {
+    color: white; 
+}
+
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 604px; 
+    text-align: center; /
+}
+
+.slogan p {
+    font-family: Montserrat, sans-serif; 
+    font-size: 42px;
+    color: white;
+}
+
+
+
+.caption {
+    text-align: center; 
+    font-size: 128px; 
+    font-family:'Bebas Neue';
+    color: #FFF;
+    margin-top: 45px; 
+}
+
+.team-section {
+    background-color: #1D1D1D;
+    width: 100%; /* Full width of the page */
+    padding: 20px 0; /* Add some padding for spacing */
+}
+
+.row {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    margin-bottom: 20px; /* Add margin between rows */
+}
+
+.team-member {
+    width: 150px; /* Adjust the width of the team member photos */
+    height: 150px; /* Adjust the height of the team member photos */
+    background-color: #FFF; /* Add a background color for the photos */
+    margin: 0 10px; /* Add margin between team members */
+}
+
+.bigger {
+    width: 200px; /* Larger width for the bigger team members */
+    height: 200px; /* Larger height for the bigger team members */
+}
+
+.team-member h3, .team-member h4 {
+    text-align: center; /* Center the captions */
+    margin-top: 10px; /* Add some space between the team members and their captions */
+}
+
