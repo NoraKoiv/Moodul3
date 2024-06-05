@@ -273,12 +273,13 @@ body {
 }
 
 table {
-    width: 100%;
+    width: 75%;
     border-collapse: collapse;
+    margin: 0 auto;
 }
 
 th, td {
-    border: 1px solid #FFF; /* Adjust border color */
+    border: 1px solid #FFF; 
     padding: 10px;
     text-align: center;
 }
@@ -288,7 +289,7 @@ th:first-child,
 td:first-child,
 th:nth-child(3),
 td:nth-child(3) {
-    width: 30%; 
+    width: 20%; 
 }
 
 /* width of the second and fourth columns */
@@ -304,3 +305,92 @@ td:nth-child(4) {
     color: #FFF;
 }
 
+/* Merch */
+.merch-promo {
+    position: relative;
+    padding: 20px; 
+    background-color: #1D1D1D;
+    color: white;
+    height: 100vh; 
+}
+
+.promo-text {
+    position: absolute;
+    top: 12.5%; /* 1/8 from the top */
+    left: 12.5%; /* 1/8 from the left */
+    text-align: center; 
+    font-size: 96px; 
+    font-family:'Bebas Neue';
+}
+
+.promo-content {
+    position: absolute;
+    top: 12.5%; /* 1/8 from the top */
+    left: 12.5%; /* 1/8 from the left */
+    right: 8%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+}
+
+
+.shop-button {
+    background-color: #FFA500;
+    color: #1D1D1D;
+    font-size: 24px;
+    padding: 15px 30px;
+    border: none;
+    margin-right: 100px; 
+    cursor: pointer;
+    text-align: center; 
+    font-size: 64px; 
+    font-family:'Bebas Neue';
+    margin-top: 380px;
+}
+
+.shop-button:hover {
+    background-color: #FF8000;
+}
+
+.promo-image {
+    height: 500px; 
+}
+
+/* footer */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1D1D1D;
+    padding: 20px 10%;
+    color: white;
+}
+
+.footer-logo img {
+    height: 76px;
+    margin-left: 12.5%; 
+    margin-top: 40px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.footer-links p {
+    margin-top: 40px; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px; 
+}
+
+.footer-links a:hover {
+    color: #FFA500; 
+}
