@@ -90,8 +90,8 @@ body {
     margin: 0;
 }
 
-/* Hero, nav */
 
+/* Hero, nav */
 .hero-section {
     background-image: url('/img/herotext1.png');
     background-size: cover;
@@ -99,6 +99,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 .navbar {
@@ -107,6 +108,14 @@ body {
     justify-content: space-between; 
     padding: 10px 20px;
     margin-top: 45px;
+}
+
+.desktop-logo {
+    display: block;
+}
+
+.mobile-logo {
+    display: none;
 }
 
 .logo img {
@@ -139,6 +148,12 @@ body {
 
 .nav-links .current {
     color: white;
+}
+
+.burger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .slogan {
@@ -719,8 +734,8 @@ td:nth-child(4) {
 
 .product-detail {
     background-color: #1D1D1D;
-    overflow: hidden; /* Clear the floated elements */
-    padding: 20px; /* Add padding to the container */
+    overflow: hidden; 
+    padding: 20px; 
 }
 
 .slideshow-container {
@@ -819,6 +834,341 @@ td:nth-child(4) {
 }
 .product-options label {
     display: inline-block;
-    width: 50px; /* Adjust as needed */
-    margin-right: 10px; /* Add margin between label and select */
+    width: 50px; 
+    margin-right: 10px; 
+}
+
+
+@media only screen and (max-width: 376px) {
+    .hero-section {
+        background-image: url('/img/wolfmobile1.png');
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        max-width: 60px;
+        max-height: 46px;
+    }
+
+
+    .navbar {
+        display: flex;
+        align-items: center; 
+        justify-content: space-between; 
+        padding: 10px 20px;
+    }
+    .nav-links {
+        display: none;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 24px;
+        cursor: pointer;
+        color: #FFA500;
+        background: none;
+        border: none;
+        padding: 0;
+        margin-right: 20px; 
+        margin-top: 0;
+        text-decoration: none;
+    }
+    
+    .burger-menu::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: currentColor;
+        margin-bottom: 5px;
+    }
+
+    .slogan {
+        width: 90%;
+        margin-top: 10%;
+    }
+
+    .slogan p {
+        font-size: 20px;
+    }
+    .btn-close {
+        font-size: 24px;
+        color: #FFA500; 
+        background: none; 
+        border: none; 
+        padding: 0; 
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    /* Team */
+    .caption {
+        text-align: center;
+        font-size: 48px;
+        font-family: 'Bebas Neue';
+        color: #FFF;
+        margin-top: 45px;
+        margin-bottom: 20px;
+    }
+    
+    .team-member img {
+        width: 100%;
+        max-width: 200px; 
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .team-member h3, .team-member h4 {
+        margin: 0 auto;
+        color: #FFF;
+        display: block;
+        font-size: 20px; 
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .row {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .team-member {
+        text-align: center;
+        margin: 0;
+        width: 100%; 
+        padding: 0; 
+        box-sizing: border-box; 
+    }
+
+    /* Games */
+    .caption2 {
+        text-align: center;
+        color: #FFA500;
+        font-size: 48px; /* Adjust font size for mobile */
+        font-family: 'Bebas Neue';
+        margin-top: 50px;
+    }
+    
+    .games-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center;
+    }
+    
+    .game {
+        margin: 0 5px;
+        flex: 1 0 45%; /* Adjust width to occupy 45% of the container width */
+        max-width: 300px; /* Set maximum width for each game */
+        text-align: center;
+    }
+    
+    .game img {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%; /* Make images fill the container width */
+        height: auto; /* Maintain aspect ratio */
+    }
+    
+    .game-name {
+        color: #FFF;
+        margin-top: 10px;
+        text-align: center;
+        font-size: 24px; /* Adjust font size for mobile */
+    }
+
+    /* results */
+    .title {
+        font-size: 48px;
+    }
+
+    .results p {
+        font-size: 10px;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+    }
+
+    table {
+        width: 90%;
+    }
+    
+    th,
+    td {
+        padding: 5px;
+        font-size: 10px;
+    }
+    th {
+        font-size: 10px;
+    }
+    .results h4 {
+        font-size: 14px;
+    }
+
+    /* Merch */
+    .merch-promo {
+        height: auto; /* Reset height */
+    }
+
+    .promo-text {
+        position: static; /* Reset position */
+        font-size: 32px; /* Adjust font size */
+        text-align: center; /* Center text */
+    }
+
+    .promo-content {
+        position: static; /* Reset position */
+        display: flex;
+        flex-direction: column; /* Arrange items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    .shop-button {
+        margin-top: 20px; /* Adjust margin */
+        font-size: 20px; /* Adjust font size */
+        padding: 5px 10px; /* Adjust padding */
+        align-content: center;
+    }
+
+    .promo-image {
+        margin-top: 20px; /* Adjust margin */
+        height: auto; /* Adjust image height */
+        max-width: 100%; /* Ensure image fits container */
+    }
+
+    /* Footer */
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .footer-logo img {
+        max-width: 50px; /* Adjust the size as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 20px; /* Add space between logo and links */
+    }
+    
+    .footer-links {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1; /* Allow links to fill remaining space */
+    }
+    
+    .footer-links p {
+        margin: 0;
+    }
+    
+    .footer-links a {
+        text-decoration: none;
+        color: #FFF; 
+        font-size: 12px;
+    }
+
+/* Mobile Hero menu */
+.hero-sectionmobile {
+    background-color: #1D1D1D;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.navbarmobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px; /* Add margin for logo and close button */
+}
+
+.logomenu img {
+    height: 80px;
+    width: auto;
+    margin-right: 10px; /* Right margin for logo */
+}
+
+.btn-close {
+    font-size: 32px;
+    color: #FFA500;
+    text-decoration: none;
+    margin-left: 10px; /* Left margin for close button */
+}
+
+.nav-links-mobile {
+    list-style: none;
+    padding: 0;
+    margin: 10px; /* Margin for links */
+    text-align: center;
+}
+
+.nav-links-mobile li {
+    margin: 10px 0;
+}
+
+.nav-links-mobile a {
+    font-family: 'Bebas Neue';
+    font-size: 32px;
+    color: #FFA500;
+    text-decoration: none;
+}
+
+.nav-links-mobile a:hover {
+    color: #FF8000;
+}
+
+/* Store */
+.store-section h2, .store-section h3 {
+    font-size: 24px;
+}
+
+.store-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.mouse {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.mouse img {
+    margin-right: 0;
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.product-mouse {
+    text-align: center;
+}
+
+.product-mouse h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.product-mouse button {
+    font-size: 18px;
+    padding: 8px 16px;
+    margin-top: 20px;
+}
 }

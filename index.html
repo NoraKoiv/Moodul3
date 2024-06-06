@@ -10,24 +10,27 @@
 </head>
 
 <body>
-     <!-- Nav, hero -->
-    <div class="hero-section">
-        <div class="navbar">
-            <div class="logo">
-                <img src="/Logo/logotervik1s.png" alt="Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="/index.html" class="current">Home</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="/store.html">Store</a></li>
-                <li><a href="/contact.html">Contact</a></li>
-            </ul>
+<!-- Nav, hero -->
+<div class="hero-section">
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Logo/logotervik1s.png" alt="desktop-logo" class="desktop-logo">
+            <img src="/Logo/logoveeb1s.png" alt="mobile-logo" class="mobile-logo">
         </div>
-
-        <div class="slogan">
-            <p>"Where Legends Rise and Victory is Foretold."</p>
-        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html" class="current">Home</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="/store.html">Store</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <a href="mobilemenu.html" class="burger-menu">☰</a>
     </div>
+
+    <div class="slogan">
+        <p>"Where Legends Rise and Victory is Foretold."</p>
+    </div>
+</div>
+
 
 <!-- Team -->
 <div id="team" class="team-section">
@@ -144,7 +147,9 @@
 <div class="merch-promo">
     <h1 class="promo-text">Awesome merch!</h1>
     <div class="promo-content">
-        <button class="shop-button">Shop Now</button>
+        <a href="store.html">
+            <button class="shop-button">Shop Now</button>
+        </a>
         <img src="/Toodeweb/Desktop/shopnow.png" alt="Merch Image" class="promo-image">
     </div>
 </div>
@@ -160,6 +165,8 @@
         <p><a href="#">Store</a></p>
     </div>
 </div>
+
+<script src="/slideshow.js"></script> <!-- Link to carousel -->
 
 </body>
 </html>
