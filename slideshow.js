@@ -26,13 +26,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-// burger
-document.addEventListener('DOMContentLoaded', () => {
-    const burgerMenu = document.querySelector('.burger-menu');
-    const navLinks = document.querySelector('.nav-links');
-
-    burgerMenu.addEventListener('click', () => {
-        navLinks.classList.toggle('mobile-nav');
-    });
-});

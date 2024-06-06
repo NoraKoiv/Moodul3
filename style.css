@@ -376,7 +376,7 @@ td:nth-child(4) {
 .footer {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Space between items */
+    justify-content: space-between; 
     background-color: #1D1D1D;
     padding: 20px calc(12.5% - 10px) /* 1/8 of the page on both sides */;
     color: white;
@@ -388,11 +388,11 @@ td:nth-child(4) {
 
 .footer-links {
     display: flex;
-    align-items: center; /* Center items vertically */
+    align-items: center; 
 }
 
 .footer-links p {
-    margin: 0 20px; /* Adjust margin for spacing */
+    margin: 0 20px; 
 }
 
 .footer-links a {
@@ -437,7 +437,7 @@ td:nth-child(4) {
 
 .form-group {
     margin-bottom: 20px;
-    width: 100%; /* Default width */
+    width: 100%; 
     display: flex;
     flex-direction: column;
 }
@@ -956,36 +956,36 @@ td:nth-child(4) {
     .caption2 {
         text-align: center;
         color: #FFA500;
-        font-size: 48px; /* Adjust font size for mobile */
+        font-size: 48px; 
         font-family: 'Bebas Neue';
         margin-top: 50px;
     }
     
     .games-container {
         display: flex;
-        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        flex-wrap: wrap; 
         justify-content: center;
     }
     
     .game {
         margin: 0 5px;
-        flex: 1 0 45%; /* Adjust width to occupy 45% of the container width */
-        max-width: 300px; /* Set maximum width for each game */
+        flex: 1 0 45%; 
+        max-width: 300px; 
         text-align: center;
     }
     
     .game img {
         margin-top: 20px;
         margin-bottom: 10px;
-        width: 100%; /* Make images fill the container width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%; 
+        height: auto; 
     }
     
     .game-name {
         color: #FFF;
         margin-top: 10px;
         text-align: center;
-        font-size: 24px; /* Adjust font size for mobile */
+        font-size: 24px; 
     }
 
     /* results */
@@ -1020,33 +1020,33 @@ td:nth-child(4) {
 
     /* Merch */
     .merch-promo {
-        height: auto; /* Reset height */
+        height: auto; 
     }
 
     .promo-text {
-        position: static; /* Reset position */
-        font-size: 32px; /* Adjust font size */
-        text-align: center; /* Center text */
+        position: static; 
+        font-size: 32px; 
+        text-align: center; 
     }
 
     .promo-content {
-        position: static; /* Reset position */
+        position: static; 
         display: flex;
-        flex-direction: column; /* Arrange items vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .shop-button {
-        margin-top: 20px; /* Adjust margin */
-        font-size: 20px; /* Adjust font size */
-        padding: 5px 10px; /* Adjust padding */
+        margin-top: 20px; 
+        font-size: 20px; 
+        padding: 5px 10px; 
         align-content: center;
     }
 
     .promo-image {
-        margin-top: 20px; /* Adjust margin */
-        height: auto; /* Adjust image height */
-        max-width: 100%; /* Ensure image fits container */
+        margin-top: 20px; 
+        height: auto; 
+        max-width: 100%; 
     }
 
     /* Footer */
@@ -1058,15 +1058,15 @@ td:nth-child(4) {
     }
     
     .footer-logo img {
-        max-width: 50px; /* Adjust the size as needed */
-        height: auto; /* Maintain aspect ratio */
-        margin-right: 20px; /* Add space between logo and links */
+        max-width: 50px; 
+        height: auto; 
+        margin-right: 20px; 
     }
     
     .footer-links {
         display: flex;
         justify-content: space-between;
-        flex-grow: 1; /* Allow links to fill remaining space */
+        flex-grow: 1; 
     }
     
     .footer-links p {
@@ -1098,26 +1098,26 @@ td:nth-child(4) {
     align-items: center;
     width: 100%;
     padding: 10px;
-    margin: 10px; /* Add margin for logo and close button */
+    margin: 10px; 
 }
 
 .logomenu img {
     height: 80px;
     width: auto;
-    margin-right: 10px; /* Right margin for logo */
+    margin-right: 10px; 
 }
 
 .btn-close {
     font-size: 32px;
     color: #FFA500;
     text-decoration: none;
-    margin-left: 10px; /* Left margin for close button */
+    margin-left: 10px; 
 }
 
 .nav-links-mobile {
     list-style: none;
     padding: 0;
-    margin: 10px; /* Margin for links */
+    margin: 10px; 
     text-align: center;
 }
 
@@ -1171,4 +1171,66 @@ td:nth-child(4) {
     padding: 8px 16px;
     margin-top: 20px;
 }
+
+.products-filters {
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.products-filters select {
+    background-color: white;
+    color: #1D1D1D;
+    font-size: 14px; 
+    padding: 8px;
+    border: none;
+    width: 80px; 
+    box-sizing: border-box;
+    margin-right: 20px;
+    font-family: 'Montserrat';
+}
+
+.products-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px; 
+}
+
+.product-item {
+    width: calc(40% - 20px); 
+    margin-bottom: 20px; 
+    padding: 0 10px; 
+    text-align: center; 
+}
+
+.product-item img {
+    width: 100%; 
+    max-width: none; 
+    height: auto; 
+    border-radius: 15px; 
+}
+
+.product-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    text-align: center; 
+}
+
+.product-item a {
+    text-decoration: none;
+}
+
+.product-item a:hover p {
+    color: #FFA500; 
+}
+
+
 }
