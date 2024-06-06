@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Godsent Wolves-Store</title>
+</head>
+
+<body>
+<!-- Alternate Nav, hero -->
+<div class="store-hero">
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Logo/logotervik1s.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="/store.html" class="current">Store</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Detail -->
+
+<div class="product-detail">
+    <a href="/store.html" class="back-button">&#8592; Back</a>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="/Toodeweb/Desktop/detail/tee1.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+            <img src="/Toodeweb/Desktop/detail/tee2.png" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </div>
+
+    <!-- H2 white text -->
+    <h2 class="product-title">Wolfpack Pride Tee <br>$24.99</h2>
+    <p class="montserrat-text">Join the pack!</p>
+    <div class="justified-text">
+        <p>Show your pack allegiance with our Wolfpack Pride Tee. Bold, stylish, and fiercely symbolic, this tee embodies the strength and unity of the pack. Wear it with pride and let your spirit run wild.</p>
+    </div>
+
+    <div class="product-options">
+        <label for="color" class="montserrat-text" style="color: #1D1D1D;">Color:</label>
+        <select id="color" name="color" style="color: #1D1D1D;">
+            <option value="black">Black</option>
+            <option value="yellow">Yellow</option>
+        </select>
+        <br>
+        <label for="size" class="montserrat-text" style="color: #1D1D1D;">Size:</label>
+        <select id="size" name="size" style="color: #1D1D1D;">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+    </div>
+
+</div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-logo">
+            <img src="/Logo/logotunnus1s.png" alt="Logo">
+        </div>
+        <div class="footer-links">
+            <p><a href="/index.html">Home</a></p>
+            <p><a href="#">Contact</a></p>
+            <p><a href="#">Store</a></p>
+        </div>
+    </div>
+
+<script src="/slideshow.js"></script> <!-- Link to carousel -->
+</div>
+</body>
+</html>

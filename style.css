@@ -151,7 +151,7 @@ body {
 }
 
 .slogan p {
-    font-family: Montserrat, sans-serif; 
+    font-family: Montserrat; 
     font-size: 42px;
     color: white;
 }
@@ -408,7 +408,7 @@ td:nth-child(4) {
 }
 
 .contact-section h2 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue';
     margin-bottom: 40px;
 }
 
@@ -437,6 +437,7 @@ td:nth-child(4) {
     background-color: white;
     color: black;
     box-sizing: border-box; 
+
     /* Contact Section */
 .contact-section {
     background-color: #1D1D1D;
@@ -446,7 +447,7 @@ td:nth-child(4) {
 }
 
 .contact-section h2 {
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue';
     margin-bottom: 40px;
 }
 
@@ -460,7 +461,7 @@ td:nth-child(4) {
 
 .form-group {
     margin-bottom: 20px;
-    width: 100%; /* Default width */
+    width: 100%; 
     display: flex;
     flex-direction: column;
 }
@@ -475,7 +476,7 @@ td:nth-child(4) {
     background-color: white;
     color: black;
     box-sizing: border-box; 
-    font-family: 'Montserrat', sans-serif; /* Set font family */
+    font-family: 'Montserrat'; 
 }
 
 .contact-form input[type="text"],
@@ -504,7 +505,7 @@ td:nth-child(4) {
     border: none;
     cursor: pointer;
     margin-left: auto; 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
 }
 
 .contact-form button:hover {
@@ -534,7 +535,7 @@ td:nth-child(4) {
     background-color: #FFA500;
     color: #1D1D1D;
     padding: 10px 20px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bebas Neue';
     font-size: 32px;
     border: none;
     cursor: pointer;
@@ -559,7 +560,265 @@ td:nth-child(4) {
 }
 
 .store-section p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     font-size: 16px;
     margin-bottom: 100px;
+}
+
+.mouse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.mouse img {
+    max-width: 400px; 
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.product-mouse {
+    text-align: left;
+}
+
+
+.product-mouse button {
+    background-color: #FFA500;
+    color: #1D1D1D;
+    padding: 10px 20px;
+    font-family: 'Bebas Neue';
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.product-mouse button:hover {
+    background-color: #FF8000;
+}
+
+.products-section {
+    background-color: #1D1D1D;
+    padding: 50px 10%;
+    color: white;
+}
+
+/* Store Section */
+.products-section {
+    background-color: #1D1D1D;
+    padding: 50px 10%;
+    text-align: center;
+    color: white;
+}
+
+.products-filters {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-left: calc(100% / 9); /* 1/9 of the page from the left */
+    margin-right: calc(100% / 9); /* 1/9 of the page from the right */
+}
+
+.products-filters select {
+    background-color: white;
+    color: #1D1D1D;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    width: 150px; 
+    box-sizing: border-box;
+    margin-right: 20px; 
+    font-family: 'Montserrat'; 
+}
+
+.products-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: calc(100% / 9); /* 1/9 of the page from the left */
+    margin-right: calc(100% / 9); /* 1/9 of the page from the right */
+}
+
+
+/* Product Rows */
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Product Items */
+.product-item {
+    width: calc(33.33% - 10px); /* 3 items in a row with spacing */
+    text-align: center;
+}
+
+.product-item img {
+    width: 120%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.product-item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.product-item a {
+    text-decoration: none;
+}
+
+.product-item a:hover p {
+    color: #FFA500;
+}
+.product-item {
+    width: calc((100% - 2 * (100% / 9) - 40px) / 3); 
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px; 
+}
+
+.product-item p {
+    font-family: 'Montserrat'; 
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.product-item a {
+    text-decoration: none;
+}
+
+.product-item a:hover p {
+    color: #FFA500; 
+}
+
+/* Details */
+.back-button {
+    color: white;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+
+.product-detail {
+    background-color: #1D1D1D;
+    overflow: hidden; /* Clear the floated elements */
+    padding: 20px; /* Add padding to the container */
+}
+
+.slideshow-container {
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.product-title {
+    color: white;
+    display: inline-block; 
+    font-size: 40px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: relative; 
+    top: -50%; 
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+.next {
+    left: calc(100% + 20px); /* Align to the right edge of the image container */
+    border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+.numbertext {
+    color: #FFA500;
+    font-size: 12px;
+    font-family: 'Montserrat';
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.justified-text {
+    color: white;
+    text-align: justify;
+}
+
+.justified-text p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-options {
+    margin-top: 20px;
+}
+
+.product-options select {
+    background-color: #ffffff;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.product-options label {
+    display: inline-block;
+    width: 50px; /* Adjust as needed */
+    margin-right: 10px; /* Add margin between label and select */
 }
